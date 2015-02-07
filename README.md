@@ -33,13 +33,30 @@ The files fore ereader with spark core:
 __Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and the connections.__
 
  - copy the .cpp and .h files to core-firmware/src &../inc. 
- - copy the examples/Spark-CardInfo.cpp to application.cpp
- - Change 'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
+ - copy the examples/Spark-CardInfo.cpp to ./core-firmware/src/application.cpp
+ - Change the line in application.cpp 'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
+
+The following files are added to the firmware library.
+ 
+```sh 
+  ./core-firmware/inc/sd-card-library.h
+  ./core-firmware/inc/sd-fat-util.h
+  ./core-firmware/inc/sd-fat.h
+  ./core-firmware/inc/sd-info.h
+  ./core-firmware/inc/sd2-card-config.h
+  ./core-firmware/inc/sd2-card.h
+  ./core-firmware/inc/fat-structs.h
+  ./core-firmware/src/File.cpp
+  ./core-firmware/src/sd-card-library.cpp
+  ./core-firmware/src/sd-file.cpp
+  ./core-firmware/src/sd-volume.cpp
+  ./core-firmware/src/sd2-card.cpp
+```
   
 Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list:
 
 
-__Wiring the board:__
+__Wiring the EPD board:__
 
 Look at repapers pin description for the [EPD-board](http://repaper.org/doc/extension_board.html)
 
@@ -66,15 +83,29 @@ FLASH_CS Orange D1
 /EPD_CS Brown D0  
 GND Black GND  
 
+__SD Card file structure__  
+Download the [wyolum directory](https://github.com/wyolum/EPD).  Copy the [IMAGES/](https://github.com/wyolum/EPD/tree/master/libraries/EReader/examples/IMAGES) directory to the root folder of your SD card.  Copy the file called “unifont.wff” to the root directory of your SD card. 
+
+```sh 
+  [SD card root]/
+  IMAGES/
+  unifont.wff
+```
 
 
 __Run the ereader example:__
 
-Copy -e-reader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
+Copy -ereader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
+
+
+```sh 
+  ./core-firmware/inc/EPD.h
+  ./core-firmware/inc/EReader.h
+  ./core-firmware/inc/picture.h
+  ./core-firmware/src/EPD.cpp
+  ./core-firmware/src/EReader.cpp
+```
 
 Start the serial monitor  and submit a character to trigger the program to start. 
-
-
-
 
 
