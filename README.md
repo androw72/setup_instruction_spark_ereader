@@ -16,13 +16,14 @@ VCC (3.3v) 3V3
 
 You need files from the following directories. You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
 
-You need to copy or clone the following libraries:  
-[sd-card-library](https://github.com/mumblepins/sd-card-library)  
-
-For local spark devlopment you need the following    
+For local spark devlopment you need the following directories:     
 [core-firmware](https://github.com/spark/core-firmware.git)  
 [core-common-lib](https://github.com/spark/core-common-lib.git)  
 [core-communication-lib](https://github.com/spark/core-communication-lib.git)  
+
+To use the sd-card copy or clone the following libraries:  
+[sd-card-library](https://github.com/mumblepins/sd-card-library)  
+
 
 The files fore ereader with spark core:  
 [spark-ereader](https://github.com/androw72/spark-ereader.git)  
