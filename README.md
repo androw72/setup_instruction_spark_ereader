@@ -41,8 +41,9 @@ The following files are added to the firmware library.
   ./core-firmware/src/sd2-card.cpp
   ./core-firmware/src/application.cpp
 ```
-  
-Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list:
+
+__Run the SD example__  
+Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list of the SD-card.
 
 
 __Wiring the EPD board:__
