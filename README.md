@@ -2,7 +2,7 @@
 
 __Set up the sd-card:__
 
-Connections:
+Connections:  
 Sd card brakeout board:
 
 CS Chip Select A2  
@@ -14,11 +14,9 @@ VCC (3.3v) 3V3
   
 
 
-You need files from the following directories. You can use git to download the repositories. For more 
+You need files from the following directories. You can use git to download the repositories. For more info about [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829) and git tools.
 
-info about [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829) and git tools.
-
-You need to cpoy or clone the following libraries:
+You need to copy or clone the following libraries:
 
 [sd-card-library](https://github.com/mumblepins/sd-card-library)  
 [core-firmware](https://github.com/spark/core-firmware.git)  
@@ -30,17 +28,11 @@ You need to cpoy or clone the following libraries:
 
 __Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and connection.__
 
-copy the .cpp and .h files to core-firmware/src &../inc
-
-copy the examples/Spark-CardInfo.cpp to application.cpp and change 
-
-'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
-
-Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) 
-
-and send a character to trigger the response. The program should read the sd-card and report back the 
-
-library list:
+ - copy the .cpp and .h files to core-firmware/src &../inc. 
+ - copy the examples/Spark-CardInfo.cpp to application.cpp and change 
+ - 'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
+  
+Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list:
 
 
 __Wiring the board:__
