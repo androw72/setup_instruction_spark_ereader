@@ -29,7 +29,7 @@ The files fore ereader with spark core:
 
 
 
-__Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and connection.__
+__Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and the connections.__
 
  - copy the .cpp and .h files to core-firmware/src &../inc. 
  - copy the examples/Spark-CardInfo.cpp to application.cpp
