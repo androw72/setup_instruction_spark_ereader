@@ -59,7 +59,7 @@ Vcc 3V Red 3.3V
 Temperature Green A0  
 SPI_CLK Yellow A3  
 BUSY Orange D7  
-PWM Brown D5  
+PWM Brown A7  
 /RESET Black D6  
 PANEL_ON Red D2  
 DISCHARGE White D4  
