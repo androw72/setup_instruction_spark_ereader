@@ -26,7 +26,7 @@ git clone https://github.com/androw72/spark-ereader.git
 
 
 
-Test the 'SparkCore-SD/libraries/SD/examples/Spark-CardInfo.cpp' to verify the SD card and connection.
+__Test the 'SparkCore-SD/libraries/SD/examples/Spark-CardInfo.cpp' to verify the SD card and connection.__
 
 copy the .cpp and .h files to core-firmware/src &../inc
 
@@ -70,7 +70,7 @@ GND Black GND
 
 
 
-To run the ereader example:
+__Run the ereader example:__
 
 Copy -e-reader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-
 
