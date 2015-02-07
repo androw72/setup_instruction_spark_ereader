@@ -13,9 +13,7 @@ VCC (3.3v) 3V3
   
 
 
-You need files from the following directories. You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
-
-For local spark devlopment you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git)  
+You need files from the following directories. You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829). For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git)  
 
 To use the sd-card copy or clone the [sd-card-library](https://github.com/mumblepins/sd-card-library). And download the [spark-ereader](https://github.com/androw72/spark-ereader.git) files for ereader with spark core.    
 
@@ -41,6 +39,7 @@ The following files are added to the firmware library.
   ./core-firmware/src/sd-file.cpp
   ./core-firmware/src/sd-volume.cpp
   ./core-firmware/src/sd2-card.cpp
+  ./core-firmware/src/application.cpp
 ```
   
 Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list:
@@ -96,6 +95,21 @@ Copy -ereader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and
   ./core-firmware/src/EReader.cpp
 ```
 
-Start the serial monitor  and submit a character to trigger the program to start. 
+__Note__
+If you don't want to use wlan you can do the following to turn it off. This also reduces the amount of compiled code downloaded to the spark-core so you will have more memory available.
+```sh 
+Comment out the spark wlan below in the ./core-common-lib/SPARK_Firmware_Driver/inc/platform_config.h
+
+/* Uncomment the line below to enable WLAN, WIRING, SFLASH and RTC functionality */
+//#define SPARK_WLAN_ENABLE
+#define SPARK_WIRING_ENABLE
+#define SPARK_SFLASH_ENABLE
+#define SPARK_RTC_ENABLE
+```
+
+__Test the ereader program with image-files on the sd-card__  
+Start the serial monitor  and submit a character to trigger the program to start. The program will first read an image stored in the flash memory. Then it draws figures and display images from the sd-card
+
+
 
 
