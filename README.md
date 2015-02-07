@@ -6,7 +6,7 @@ Connect the Sd card brakeout board:
 
 CS Chip Select A2  
 DI: MOSI A5  
-DI: MISO A4  
+DO: MISO A4  
 CLK:SCK A3  
 GND GND  
 VCC (3.3v) 3V3  
