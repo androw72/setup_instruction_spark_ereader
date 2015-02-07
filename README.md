@@ -14,10 +14,9 @@ VCC (3.3v) 3V3
   
 
 
-You need files from the following directories. You can use git to download the repositories. For more info about [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829) and git tools.
+You need files from the following directories. You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
 
-You need to copy or clone the following libraries:
-
+You need to copy or clone the following libraries:  
 [sd-card-library](https://github.com/mumblepins/sd-card-library)  
 
 For local spark devlopment you need the following    
