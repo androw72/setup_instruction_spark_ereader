@@ -1,4 +1,4 @@
-# setup_instruction_spark_ereader
+## Instruction for epaper display development board([EPD](http://www.adafruit.com/products/1346)) with the [spark_ereader](https://github.com/androw72/spark-ereader) library
 
 __Set up the sd-card:__
 
