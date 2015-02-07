@@ -19,9 +19,13 @@ You need files from the following directories. You can use git to download the r
 You need to copy or clone the following libraries:
 
 [sd-card-library](https://github.com/mumblepins/sd-card-library)  
+
+For local spark devlopment you need the following    
 [core-firmware](https://github.com/spark/core-firmware.git)  
 [core-common-lib](https://github.com/spark/core-common-lib.git)  
 [core-communication-lib](https://github.com/spark/core-communication-lib.git)  
+
+The files fore ereader with spark core:  
 [spark-ereader](https://github.com/androw72/spark-ereader.git)  
 
 
@@ -29,8 +33,8 @@ You need to copy or clone the following libraries:
 __Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and connection.__
 
  - copy the .cpp and .h files to core-firmware/src &../inc. 
- - copy the examples/Spark-CardInfo.cpp to application.cpp and change 
- - 'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
+ - copy the examples/Spark-CardInfo.cpp to application.cpp
+ - Change 'include "sd-card-library/sd-card-library.h"' to include '"sd-card-library.h"'  
   
 Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list:
 
@@ -66,10 +70,7 @@ GND Black GND
 
 __Run the ereader example:__
 
-Copy -e-reader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-
-
-firmware/inc folder.
-
+Copy -e-reader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
 
 Start the serial monitor  and submit a character to trigger the program to start. 
 
