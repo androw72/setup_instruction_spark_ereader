@@ -85,7 +85,7 @@ Download the [wyolum directory](https://github.com/wyolum/EPD).  Copy the [IMAGE
 
 
 __Setup the ereader example:__  
-Copy ereader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
+Copy ereader.cpp and EPD.cpp from the spark-ereader library to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
 
 
 ```sh 
