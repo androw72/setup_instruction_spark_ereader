@@ -2,7 +2,7 @@
 
 __Set up the sd-card:__
 
-Connect the Sd card brakeout board:
+Connect the [Sd card brakeout board](https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial):
 
 CS Chip Select A2  
 DI: MOSI A5  
@@ -13,9 +13,10 @@ VCC (3.3v) 3V3
   
 
 __Libraries for spark-Core__  
- For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git). You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
+ For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git). You can use git to download the repositories. For more information look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
 
-To use the sd-card copy or clone the [sd-card-library](https://github.com/mumblepins/sd-card-library). And download the [spark-ereader](https://github.com/androw72/spark-ereader.git) files for ereader with spark core.    
+__Libraries for SD card and epaper display__  
+Download or clone the [sd-card-library](https://github.com/mumblepins/sd-card-library). And for the Ereader application download the [spark-ereader](https://github.com/androw72/spark-ereader.git) files for ereader with spark core.    
 
 
 __Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/master/firmware/examples/Spark-CardInfo.cpp) example to verify the SD card and the connections.__
@@ -43,34 +44,32 @@ The following files are added to the firmware library.
 ```
 
 __Run the SD example__  
-Connect througt the USB-serialport with a serial monitor (115200 baud) (i.e. sparc-dev serial monitor) and send a character to trigger the response. The program should read the sd-card and report back the library list of the SD-card.
+Connect througt the USB-serialport with a serial monitor, 115200 baud. You can use the sparc-dev serial monitor. Send a character to trigger the response. The program should read the sd-card and report back the library list of the SD-card.
 
 
 __Wiring the EPD board:__
 
 Look at repapers pin description for the [EPD-board](http://repaper.org/doc/extension_board.html)
 
-Pin Number Description Color
-
 Vcc 3V Red 3.3V  
-(LED1) White - - -  
-(UART_RX) Grey - - -  
-(UART_TX) Purple - - -  
-(SW2) Blue - - -  
+(LED1) White - not connected  
+(UART_RX) Grey - not connected  
+(UART_TX) Purple - not connected  
+(SW2) Blue - not connected  
 Temperature Green A0  
 SPI_CLK Yellow A3  
 BUSY Orange D7  
 PWM Brown A7  
-/RESET Black D6  
+RESET Black D6  
 PANEL_ON Red D2  
 DISCHARGE White D4  
 BORDER_CONTROL Grey D3  
 SPI_MISO Purple A4  
 SPI_MOSI Blue A5  
-(RST/SBWTDIO) Green - - -  
-(TEST/SBWTCK) Yellow - - -  
+(RST/SBWTDIO) Green - not connected  
+(TEST/SBWTCK) Yellow - not connected  
 FLASH_CS Orange D1  
-/EPD_CS Brown D0  
+EPD_CS Brown D0  
 GND Black GND  
 
 __SD Card file structure__  
