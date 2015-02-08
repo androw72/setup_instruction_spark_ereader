@@ -50,8 +50,7 @@ __Run the SD example__
 Connect througt the USB-serialport with a serial monitor, 115200 baud. You can use the sparc-dev serial monitor. Send a character to trigger the response. The program should read the sd-card and report back the library list of the SD-card.
 
 
-__Wiring the EPD board:__
-
+__Wiring the EPD board:__  
 Look at repapers pin description for the [EPD-board](http://repaper.org/doc/extension_board.html)
 
 Vcc 3V Red 3.3V  
@@ -85,8 +84,7 @@ Download the [wyolum directory](https://github.com/wyolum/EPD).  Copy the [IMAGE
 ```
 
 
-__Setup the ereader example:__
-
+__Setup the ereader example:__  
 Copy ereader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and picture.h to core-firmware/inc folder.  
 
 
@@ -113,7 +111,7 @@ Comment out the spark wlan below in the ./core-common-lib/SPARK_Firmware_Driver/
 #define SPARK_RTC_ENABLE
 ```
 
-__Test the ereader program with image-files on the sd-card__  
+__Test the ereader program that loads image files from the sd-card__  
 Start the serial monitor  and submit a character to trigger the program to start. The program will first read an image stored in the flash memory. Then it draws figures and display images from the sd-card
 
 
