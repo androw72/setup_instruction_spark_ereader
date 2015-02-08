@@ -28,6 +28,7 @@ __Test the [Spark-CardInfo](https://github.com/mumblepins/sd-card-library/blob/m
 The following files are added to the firmware library.
  
 ```sh 
+  //header files
   ./core-firmware/inc/sd-card-library.h
   ./core-firmware/inc/sd-fat-util.h
   ./core-firmware/inc/sd-fat.h
@@ -35,6 +36,8 @@ The following files are added to the firmware library.
   ./core-firmware/inc/sd2-card-config.h
   ./core-firmware/inc/sd2-card.h
   ./core-firmware/inc/fat-structs.h
+  
+  // source files
   ./core-firmware/src/File.cpp
   ./core-firmware/src/sd-card-library.cpp
   ./core-firmware/src/sd-file.cpp
@@ -88,9 +91,12 @@ Copy -ereader.cpp and EPD.cpp to the core-firmware/src and EPD.h, EReader.h, and
 
 
 ```sh 
+  //header files
   ./core-firmware/inc/EPD.h
   ./core-firmware/inc/EReader.h
   ./core-firmware/inc/picture.h
+  
+  //source files
   ./core-firmware/src/EPD.cpp
   ./core-firmware/src/EReader.cpp
 ```
