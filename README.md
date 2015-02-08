@@ -12,8 +12,8 @@ GND GND
 VCC (3.3v) 3V3  
   
 
-
-You need files from the following directories. You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829). For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git)  
+__Libraries for spark-Core__  
+ For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git). You can use git to download the repositories. For more info about how to compile localy look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
 
 To use the sd-card copy or clone the [sd-card-library](https://github.com/mumblepins/sd-card-library). And download the [spark-ereader](https://github.com/androw72/spark-ereader.git) files for ereader with spark core.    
 
