@@ -1,5 +1,10 @@
 ## Instruction for epaper display development board([EPD](http://www.adafruit.com/products/1346)) with the [spark_ereader](https://github.com/androw72/spark-ereader) library
 
+__Introduction__  
+The spark ereader is a library that displays images and text. It's designed to work with MCUs that has small amount of RAM. To display text a font is read from the SD-card and translated to graphics. (To use the spark RAM memory as display memory you can examin the seedstudio [example](https://github.com/androw72/spark-seeedstudio-epaper)). Images are stored on the sd-card in the so called 'wif' format.
+
+To debug the setup and wiring the first example tests the SD card only. And then the ereader library is tested. The ereader library demo is run and the application shows images and text from the SD card.
+
 __Set up the sd-card:__
 
 Connect the [Sd card brakeout board](https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial):
