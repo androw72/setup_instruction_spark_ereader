@@ -1,7 +1,7 @@
 ## Instruction for epaper display development board([EPD](http://www.adafruit.com/products/1346)) with the [spark_ereader](https://github.com/androw72/spark-ereader) library
 
 __Introduction__  
-The spark ereader is a library that displays images and text. It's designed to work with MCUs that has small amount of RAM. To display text a font is read from the SD-card and translated to graphics. (To use the spark RAM memory as display memory you can examin the seedstudio [example](https://github.com/androw72/spark-seeedstudio-epaper)). Images are stored on the sd-card in the so called 'wif' format.
+The spark ereader is a library that displays images and text. It's designed to work with MCUs that has small amount of RAM. To display text a font is read from the SD-card and translated to graphics. Images are stored on the sd-card in the so called 'wif' format. The continued example assumes local development. A spark dev compilation folder can be found [here](https://github.com/androw72/spark-ereader/tree/master/spark_dev_work).
 
 To debug the setup and wiring the first example tests the SD card only. And then the ereader library is tested. The ereader library demo is run and the application shows images and text from the SD card.
 
@@ -17,8 +17,12 @@ GND GND
 VCC (3.3v) 3V3  
   
 
-__Libraries for spark-Core__  
- For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git). You can use git to download the repositories. For more information look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829).  
+__Local developmen libraries for spark-Core__  
+ For local spark development you need [core-firmware](https://github.com/spark/core-firmware.git), [core-common-lib](https://github.com/spark/core-common-lib.git), and [core-communication-lib](https://github.com/spark/core-communication-lib.git). You can use git to download the repositories. For more information look at the tutorial for [local development](http://community.spark.io/t/local-development-and-gdb-debugging-with-netbeans-a-step-by-step-guide/7829). 
+ 
+ __Compiling with Spark dev__  
+ The following [folder](https://github.com/androw72/spark-ereader/tree/master/spark_dev_work) contains the full spark-ereader example.
+
 
 __Libraries for SD card and epaper display__  
 Download or clone the [sd-card-library](https://github.com/mumblepins/sd-card-library). And for the Ereader application download the [spark-ereader](https://github.com/androw72/spark-ereader.git) files for ereader with spark core.    
