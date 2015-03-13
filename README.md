@@ -105,16 +105,8 @@ Copy ereader.cpp and EPD.cpp from the spark-ereader library to the core-firmware
 ```
 
 __Note__
-If you don't want to use wlan you can do the following to turn it off. This also reduces the amount of compiled code downloaded to the spark-core so you will have more memory available.
-```sh 
-Comment out the spark wlan below in the ./core-common-lib/SPARK_Firmware_Driver/inc/platform_config.h
+If you don't want to use the cloud you can set the SYSTEM_MODE(MANUAL) in the application.cpp  
 
-/* Uncomment the line below to enable WLAN, WIRING, SFLASH and RTC functionality */
-//#define SPARK_WLAN_ENABLE
-#define SPARK_WIRING_ENABLE
-#define SPARK_SFLASH_ENABLE
-#define SPARK_RTC_ENABLE
-```
 
 __Test the ereader program that loads image files from the sd-card__  
 Start the serial monitor  and submit a character to trigger the program to start. The program will first read an image stored in the flash memory. Then it draws figures and display images from the sd-card
